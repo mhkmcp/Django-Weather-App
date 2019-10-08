@@ -3,22 +3,6 @@ from django.shortcuts import render
 from . models import City
 from . forms import CityForm
 
-my_api_key = 'e7d9f101f9ed01785c5ac618bbef1428'
-city = 'LONDON'
-url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid={}'
-
-
-# weather_data = []
-# req = requests.get(url.format(city, my_api_key)).json()
-# city_weather = {
-#     # 'city': req['name'],
-#     'temperature': req['main']['temp'],
-#     'description': req['weather'][0]['description'],
-#     'icon': req['weather'][0]['icon'],
-# }
-# weather_data.append(city_weather)
-#
-
 
 def index(request):
     my_api_key = 'your-api-key'
